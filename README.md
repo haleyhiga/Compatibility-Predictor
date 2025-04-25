@@ -15,6 +15,20 @@
 - The output will be a JSON file containing a JSON object with "scoredApplicants", along with the applicants name, and score associated with them.
 
 # How To Run
-- Input file will default to input.json if not specified.  If user wishes to specify input file, use command line arguments such as:
-*- python3 predictor.py --input-file sample_input.json
 
+- Run with defaults:
+    - python3 predictor.py
+
+
+# Using Custom Input and Output Files
+- Input file will default to input.json if not specified.  If user wishes to specify input file, use command line arguments such as:
+    * python3 predictor.py --input-file sample_input.json
+
+- Output file will default to output.json if not specified.  If user wishes to specify output file, use command line arguments such as:
+    * python3 predictor.py --output-file sample_output.json
+
+- If the user wishes to use an ideal profile, the user will input their ideal profile in a JSON file and run the following:
+    * python3 predictor.py --ideal-profile your_ideal_profile.json
+
+Sample usages:
+- python3 predictor.py -i input.json -o output.json -p ideal_profile.json
